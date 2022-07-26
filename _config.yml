@@ -2,7 +2,7 @@ title:              The File Drawer
 description:        Stuff that didn't work or too insignificant to publish
 
 # GitHub Pages / Jekyll configuration
-baseurl:            ''
+baseurl:            https://chooyr.github.io/p-0.06/
 permalink:          /:title/
 paginate:           5
 defaults:
