@@ -1,2 +1,3 @@
-### GoF in SCR
+### How this all started
 
+When I started my PhD, I thought of leaving a public record of my screw-ups and the difficulties I encountered somewhere for posterity. Then, a couple of months into my PhD, while checking if something was behaving the way it was supposed to, my supervisor said, "Hey, this is really cool. People might be interested in this. Maybe you could write up a blog post about it." Can't remember if we acutally said it wouldn't be publishable as-is, or at least not immediately, but that was obvious enough. More importantly, I had gotten the greenlight to share my research in channels outside of publications. 
