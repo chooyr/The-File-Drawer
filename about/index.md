@@ -3,8 +3,4 @@ layout: page
 title: About
 ---
 
-Hey there! This page is included as an example. Feel free to customize it for
-your own use.
-
-Follow [instructions](<http://www.texts.io/support/0017/>) to publish your blog
-on GitHub Pages.
+I'm a PhD student in St Andrews working on goodness-of-fit for spatial capture recapture models and methods for analysing citizen science data. This blog will cover the unpublishable stuff produced during my PhD.
