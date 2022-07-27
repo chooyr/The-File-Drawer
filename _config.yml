@@ -7,7 +7,7 @@ baseurl:            https://chooyr.github.io/p-0.06
 permalink:          :title/
 paginate:           5
 defaults:
-issues_repo:        chooyr/github.com/chooyr/p-0.06
+issues_repo:        chooyr/p-0.06
 -
     scope:
       path:         https://chooyr.github.io/p-0.06/
