@@ -79,4 +79,3 @@ Happy writing!
 
 Got a question? Visit <http://www.texts.io/>.
 
-comments_id: 01
