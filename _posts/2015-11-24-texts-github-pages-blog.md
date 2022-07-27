@@ -1,6 +1,7 @@
 ---
 title: Texts + GitHub Pages = Blog
 ---
+comments_id: 01
 
 Follow simple [instructions](<http://www.texts.io/support/0017/>) to publish
 your blog on GitHub Pages and write posts in Texts.
@@ -79,5 +80,3 @@ Happy writing!
 
 Got a question? Visit <http://www.texts.io/>.
 
-
-_comments_id: 01
