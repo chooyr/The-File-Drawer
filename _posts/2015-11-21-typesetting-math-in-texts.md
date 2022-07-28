@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Typesetting Math in Texts
 published: false
 ---
