@@ -1,5 +1,6 @@
 ---
 title: Texts + GitHub Pages = Blog
+published: false
 ---
 
 Follow simple [instructions](<http://www.texts.io/support/0017/>) to publish
