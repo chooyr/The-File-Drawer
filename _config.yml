@@ -13,3 +13,4 @@ defaults:
       path:         https://chooyr.github.io/p-0.06/
     values:
       layout:       post
+excerpt_separator: "<!--excerpt-->"
