@@ -6,14 +6,21 @@ layout: default
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date_to_string }}</span>
   {{ content }}
-  <script src="https://utteranc.es/client.js"
-          repo="chooyr/p-0.06"
-          issue-term="pathname"
-          label="Blog comment"
-          theme="github-light"
-          crossorigin="anonymous"
-          async>
-  </script>
+  <script src="https://giscus.app/client.js"
+        data-repo="chooyr/p-0.06"
+        data-repo-id="R_kgDOHrTN5g"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOHrTN5s4CQe60"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="0"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
 </div>
 
 <div class="related">
