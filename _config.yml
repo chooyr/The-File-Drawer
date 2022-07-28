@@ -12,8 +12,8 @@ defaults:
     scope:
       path:         https://chooyr.github.io/p-0.06/
     values:
-      layout:       "post"
-excerpt_separator: "<!--excerpt-->"
+      layout:       post
+excerpt_separator: <!--excerpt-->
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
