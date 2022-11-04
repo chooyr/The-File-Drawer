@@ -1,5 +1,6 @@
 ---
 title: Typesetting Math in Texts
+published: false
 ---
 
 Basic math
@@ -7,6 +8,8 @@ Basic math
 
 Whenever you typeset mathematical notation, it needs to have “Math” style. For
 example: If $$a$$ is an integer, then $$2a+1$$ is odd.
+
+<!--excerpt-->
 
 Superscripts and subscripts are created using the characters `^` and `_`,
 respectively: $$x^2+y^2=1$$ and $$a_n=0$$. It is fine to have both on a single
