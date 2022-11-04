@@ -22,7 +22,7 @@ Testing goodness-of-fit in spatial capture-recapture models with the Freeman-Tuk
 ---
 
 # The Freeman-Tukey goodness-of-fit test
-The Freeman-Tukey test is a goodness-of-fit (GoF) test for models of count data. Given a set of $B$ observations, the Freeman-Tukey statistic ($FT$) quantifies the discrepancy between the observed counts ($O$) and the expected counts ($E$), summed across each observation $b$:
+The Freeman-Tukey test is a goodness-of-fit (GoF) test for models of count data. Given a set of $B$ observations, the Freeman-Tukey statistic ($FT$) quantifies the discrepancy between the observed counts ($O$) and the expected counts ($E$), summed across each observation $b$:  
 $$ FT = \displaystyle \sum\limits_{b=1}^B \left( \sqrt{O_b} - \sqrt{E_b} \right)^2 $$
 A larger value for $FT$ would thus indicate a greater discrepancy between the observed data and expected values estimated by the model. 
 
