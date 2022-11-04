@@ -52,12 +52,12 @@ The test may be indicative of poor fit due to
 Since the data aggregates across sampling occasions, GoF tests with $y_{ij.}$ do not allow us to infer if there may have been unmodelled temporal heterogeneity in detection.
 
 # Testing GoF in practice with frequentist SCR models
-In frequentist SCR models, the activity centres ($\bm{s}$) are not explicitly estimated as a model parameter but rather integrated across the state-space to estimate density. Since $p_{ijk}$ which depends on the location of $s_i$, we derive the posterior probability of $s_i$ in the $\pi(s_i)$ given the model estimates $\bm{\hat{\theta}}$ and the animal's capture history $y_i$. Using Bayes rule,
-$$\left[ s_i \mid y_i,\, \bm{\hat{\theta}} \right]
-  \propto \left[ y_i,\, \bm{\hat{\theta}} \mid s_i \right] \left[ s_i \right] \\
-  \implies \pi(s_i) = \left[s_i \mid y_i,\, \bm{\hat{\theta}} \right] \\
-	= \dfrac{\left[ y_i,\, \bm{\hat{\theta}} \mid s_i \right] \left[ s_i \right]} {\displaystyle\int \left[ y_i,\, \bm{\hat{\theta}} \mid s_i \right] \left[ s_i \right] d \mathcal{S}}$$
-In practice, $\mathcal{S}$ is discretised into a mask with $G$ pixels to allow the fitting of SCR models to be computationally feasible. In deriving the locations of $\bm{s}$, we can use the mask to calculate to calculate $\pi(s_{ig})$, the probability that $s_i$ is located in pixel $\mathcal{S}_g$ and $\displaystyle\int \left[ y_i,\, \bm{\hat{\theta}} \mid s_i \right] \left[ s_i \right] d \mathcal{S}$ is approximated by summing across the likelihoods that $s_i=\mathcal{S}_g$. Deriving $\pi(s_i)$ is part of the  ```GoF_HN``` function
+In frequentist SCR models, the activity centres ($\mathbf{s}$) are not explicitly estimated as a model parameter but rather integrated across the state-space to estimate density. Since $p_{ijk}$ which depends on the location of $s_i$, we derive the posterior probability of $s_i$ in the $\pi(s_i)$ given the model estimates $\mathbf{\hat{\theta}}$ and the animal's capture history $y_i$. Using Bayes rule,
+$$\left[ s_i \mid y_i,\, \mathbf{\hat{\theta}} \right]
+  \propto \left[ y_i,\, \mathbf{\hat{\theta}} \mid s_i \right] \left[ s_i \right] \\
+  \implies \pi(s_i) = \left[s_i \mid y_i,\, \mathbf{\hat{\theta}} \right] \\
+	= \dfrac{\left[ y_i,\, \mathbf{\hat{\theta}} \mid s_i \right] \left[ s_i \right]} {\displaystyle\int \left[ y_i,\, \mathbf{\hat{\theta}} \mid s_i \right] \left[ s_i \right] d \mathcal{S}}$$
+In practice, $\mathcal{S}$ is discretised into a mask with $G$ pixels to allow the fitting of SCR models to be computationally feasible. In deriving the locations of $\mathbf{s}$, we can use the mask to calculate to calculate $\pi(s_{ig})$, the probability that $s_i$ is located in pixel $\mathcal{S}_g$ and $\displaystyle\int \left[ y_i,\, \mathbf{\hat{\theta}} \mid s_i \right] \left[ s_i \right] d \mathcal{S}$ is approximated by summing across the likelihoods that $s_i=\mathcal{S}_g$. Deriving $\pi(s_i)$ is part of the  ```GoF_HN``` function
 ```{R}
 	# Extract predicted detection parameters
 	preds <- predict(object)
@@ -152,7 +152,7 @@ set.seed(324)
 CH <- simHN(AC=AC, traps=traps, g0=g0, sigma=sigma, nOcc=nOcc)[[2]]
 ```
 ## Fitting the SCR model
-The continuous state-space is discretised into an ```secr.mask``` object to calculate the integration of $\bm{s}$ across $\mathcal{S}$
+The continuous state-space is discretised into an ```secr.mask``` object to calculate the integration of $\mathbf{s}$ across $\mathcal{S}$
 ```{R}
 # Make SCR mask 
 polywin <- as(win, "SpatialPolygons")
